@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="19dp"
+    tools:context=".book_info">
+
+    <ImageView
+        android:id="@+id/img_info"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true">
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/img_info">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Name:-"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/bookname_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="book_name"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/l1">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author Name:-"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/author_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="author"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/l2">
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publisher Name:-"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/publisher_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Publisher"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/l3">
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edition:- "
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/edition_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="edition"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/l4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Detail:-  "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/description_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book Description"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/receive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Receive Book" />
+
+</RelativeLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".donate_form">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="11">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/bookdonate" />
+
+                <EditText
+                    android:id="@+id/dbookname"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/searchbar_shape"
+                    android:drawableRight="@drawable/ic_book_black_24dp"
+                    android:hint="@string/enter_book_name"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="8dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/dbookauthorname"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/searchbar_shape"
+                    android:drawableRight="@drawable/ic_person_black_24dp"
+                    android:hint="Enter Author Name"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="8dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/dbookpublishername"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/searchbar_shape"
+                    android:drawableRight="@drawable/ic_people_outline_black_24dp"
+                    android:hint="Enter Publisher Name"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="8dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/dbookedition"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/searchbar_shape"
+                    android:hint="Enter Book Edition"
+                    android:paddingLeft="20dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black" />
+
+
+                <!--<EditText
+                    android:id="@+id/bookephoto"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/searchbar_shape"
+                    android:hint="Enter Upload Book Photo"
+                    android:paddingLeft="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black" />-->
+
+
+                <EditText
+                    android:id="@+id/dbookshortDescript"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/searchbar_shape"
+                    android:hint="Enter Book Short Description"
+                    android:paddingLeft="20dp"
+                    android:textColor="@android:color/black"
+
+
+                    android:textColorHint="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/categoryid"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="19dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:text="Select Category :"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+
+                <!-- Spinner Element -->
+                <Spinner
+                    android:id="@+id/dmyspinner"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_alignBottom="@+id/categoryid"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/categoryid"
+                    android:background="@drawable/searchbar_shape"
+                    android:textColorHint="@android:color/black" />
+
+                <LinearLayout
+                    android:layout_width="372dp"
+                    android:layout_height="129dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:id="@+id/dbookimgview"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="4"/>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/floatingActionButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/ic_menu_camera" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/savedonatebutton"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_shape"
+                android:text="SAVE"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
